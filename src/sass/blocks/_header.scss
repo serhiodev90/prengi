@@ -1,0 +1,58 @@
+.header {
+	min-height: 85px;
+	padding: 20px 0px 19px 0px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 227px;
+		padding-right: 33px;
+		display: flex;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__icon {
+		width: 28px;
+		height: 21px;
+		margin-right: 11px;
+	}
+
+	&__contact {
+		min-height: 50px;
+		font-size: 12px;
+		font-weight: 300;
+		text-align: left;
+		color: #242424;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		line-height: 14px;
+  		font-weight: 700;
+	}
+
+	&__address {
+		display: block;
+		margin-top: 5px;
+		line-height: 12px;
+		font-style: normal;
+	}
+
+	&__tel {
+		display: block;
+		margin-top: 5px;
+		text-decoration: none;
+		color: #242424;
+	}
+
+	&__email {
+		display: block;
+		margin-top: 5px;
+		text-decoration: none;
+		color: #242424;
+	}
+}
