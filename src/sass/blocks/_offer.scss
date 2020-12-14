@@ -44,6 +44,7 @@
 	}
 
 	&__content {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		margin-top: 27px;
@@ -52,7 +53,6 @@
 	&__access {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		width: 525px;
 		min-height: 268px;
 		padding-top: 106px;
@@ -80,9 +80,24 @@
 	}
 	.carousel {
 		width: 440px;
-		height: 570px;
 		img {
 			width: 100%;
+		}
+		.slick-dots {
+			position: absolute;
+			top: 85%;
+			left: -40%;
+			list-style: none;
+		}
+		.slick-prev {
+			position: absolute;
+			top: 85%;
+			left: -55%;
+		}
+		.slick-next {
+			position: absolute;
+			top: 85%;
+			left: -25%;
 		}
 	}
 }
