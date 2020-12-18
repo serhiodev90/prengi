@@ -57,6 +57,10 @@
 		line-height: 11px;
 		text-decoration: none;
 		color: #242424;
+		transition: ease .5s all;
+		&:hover {
+			color: $main-color;
+		}
 	}
 
 	&__email {
@@ -65,5 +69,9 @@
 		line-height: 11px;
 		text-decoration: none;
 		color: #242424;
+		transition: ease .5s all;
+		&:hover {
+			color: $main-color;
+		}
 	}
 }
