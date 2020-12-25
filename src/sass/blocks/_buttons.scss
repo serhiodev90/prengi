@@ -19,3 +19,11 @@
 		background: #039dc1;
 	}
 }
+
+@media (max-width: 1199px) {
+	.button {
+		width: 40%;
+		height: auto;
+		font-size: 14px; 
+	}
+}
