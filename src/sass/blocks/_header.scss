@@ -76,15 +76,18 @@
 
 @media (max-width: 1199px) {
 	.header {
-		padding: 20px;
-		&__contact {
-
-		}
+		padding: 20px 40px;
 		&__address {
 			display: none;
 		}
 		&__email {
 			display: none;
 		}
+	}
+}
+
+@media (max-width: 991px) {
+	.header {
+		display: none;
 	}
 }
