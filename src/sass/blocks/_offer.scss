@@ -20,6 +20,7 @@
 	}
 
 	&__menu {
+		width: 545px;
 		font-size: 13px;
 		font-weight: 700;
 		line-height: 13px;
@@ -290,14 +291,47 @@
 				justify-content: center;
 			}
 			.slick-prev {
-				top: 50%;
-				left: 0;
+				top: 60%;
+				left: -2%;
 				transform: translateY(-50%);
 			}
 			.slick-next {
-				top: 50%;
-				left: 98%;
+				top: 60%;
+				left: 100%;
 				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.offer {
+		&__burger.active {
+			top: 9%;
+    		right: 26%;
+		}
+		&__menu {
+			width: 85%;
+		}
+		&__list {
+			font-size: 16px;
+    		line-height: 16px;
+		}
+		&__title {
+			font-size: 24px;
+		}
+		&__subtitle {
+			font-size: 14px;
+		}
+		.carousel {
+			img {
+				width: 50%;
+			}
+			.slick-prev {
+				left: 20%;
+			}
+			.slick-next {
+				left: 80%;
 			}
 		}
 	}
