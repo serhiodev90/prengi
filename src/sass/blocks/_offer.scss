@@ -82,9 +82,9 @@
 		}
 	}
 	.carousel {
-		width: 440px;
+		width: 50%;
 		img {
-			width: 100%;
+			width: 80%;
 		}
 		.slick-slide {
 			display: flex;
@@ -94,7 +94,7 @@
 			display: flex;
 			position: absolute;
 			top: 85%;
-			left: -50%;
+			left: -15%;
 			list-style: none;
 			transform: translateX(50%);
 			button {
@@ -117,7 +117,7 @@
 		.slick-prev {
 			position: absolute;
 			top: 86%;
-			left: -46%;
+			left: -12%;
 			font-size: 0;
 			height: 11px;
 			width: 6px;
@@ -131,7 +131,7 @@
 		.slick-next {
 			position: absolute;
 			top: 86%;
-			left: -22%;
+			left: 6%;
 			font-size: 0;
 			height: 11px;
 			width: 6px;
@@ -147,15 +147,14 @@
 
 @media (max-width: 1199px) {
 	.offer {
+		min-height: 0;
 		margin-top: 69px;
 		padding: 40px 40px 0;
-		&__logo {
-			img {
-				width: 80%;
-			}
-		}
 		&__menu {
 			font-size: 12px;
+		}
+		&__list {
+			justify-content: flex-end;
 		}
 		&__title {
 			font-size: 31px;
@@ -287,32 +286,48 @@
 		}
 		.carousel {
 			margin-top: 40px;
+			width: 60%;
+			img {
+				width: 100%;
+			}
 			.slick-slide {
+				width: 100%;
 				justify-content: center;
 			}
 			.slick-prev {
 				top: 60%;
-				left: -2%;
+				left: -12%;
 				transform: translateY(-50%);
 			}
 			.slick-next {
 				top: 60%;
-				left: 100%;
+				left: 110%;
 				transform: translateY(-50%);
 			}
 		}
 	}
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
 	.offer {
 		&__burger.active {
-			top: 9%;
-    		right: 26%;
+			right: 7%;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.offer {
+		&__logo {
+			width: 40%;
+		}
+		&__burger.active {
+    		right: 13%;
 		}
 		&__menu {
-			width: 85%;
+			width: 100%;
 		}
+
 		&__list {
 			font-size: 16px;
     		line-height: 16px;
@@ -324,14 +339,15 @@
 			font-size: 14px;
 		}
 		.carousel {
+			width: 90%;
 			img {
-				width: 50%;
+				width: 90%;
 			}
 			.slick-prev {
-				left: 20%;
+				left: -5%;
 			}
 			.slick-next {
-				left: 80%;
+				left: 103%;
 			}
 		}
 	}
