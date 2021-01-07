@@ -89,6 +89,7 @@
 		.slick-slide {
 			display: flex;
 			justify-content: flex-end;
+			outline: none;
 		}
 		.slick-dots {
 			display: flex;
@@ -339,7 +340,7 @@
 			font-size: 14px;
 		}
 		.carousel {
-			width: 90%;
+			width: 85%;
 			img {
 				width: 90%;
 			}
