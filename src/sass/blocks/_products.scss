@@ -1,32 +1,117 @@
 .products {
 	padding: 78px 0px 61px;
 	background: url('../img/products/bg_products.jpg')center (center/cover) no-repeat;
-	&__tabs {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 845px;
-		height: 65px;
-		margin: 26px auto 35px;
-		border-radius: 4px;
-		border: solid 1px #ffffff;
-	}
-	&__tab {
+	.carousel {
 		display: flex;
 		align-items: center;
-		height: 48px;
-		padding: 0px 25px;
-		border-right: 1px solid #8b9192;
-		font-size: 14px;
-		text-align: center;
-		color: #ffffff;
-		cursor: pointer;
-		transition: ease .5s all;
-		&:hover {
-			color: $main-color;
+		width: 947px;
+		margin: 25px auto 0;
+		padding-top: 100px;
+		img {
+			width: 100%;
 		}
-		&:last-child {
+		.slick-prev {
+			position: absolute;
+			top: 50%;
+			left: -5%;
+			width: 18px;
+			height: 60px;
+			background: url(../icons/products/arrow_left.png)center no-repeat;
 			border: none;
+			font-size: 0;
+			outline: none;
+			cursor: pointer;
+		}
+		.slick-next {
+			position: absolute;
+			top: 50%;
+			right: -5%;
+			width: 18px;
+			height: 60px;
+			background: url(../icons/products/arrow_right.png)center no-repeat;
+			border: none;
+			font-size: 0;
+			outline: none;
+			cursor: pointer;
+		}
+		.slick-dots {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 845px;
+			height: 65px;
+			padding: 0px 10px;
+			border-radius: 4px;
+			border: solid 1px #ffffff;
+			list-style: none;
+			li {
+				display: flex;
+				align-items: center;
+				font-size: 0px;
+				text-align: center;
+				color: #ffffff;
+				cursor: pointer;
+				transition: ease .5s all;
+				&:hover {
+					color: $main-color;
+				}
+				&:last-child {
+					border: none;
+				}
+				button {
+					border: none;
+				}
+				&:nth-child(1)::before {
+					content: 'Prengi Production';
+					height: 50px;
+					padding: 0px 25px;
+					font-size: 14px;
+					line-height: 50px;
+					border-right: 1px solid #8b9192;
+				}
+				&:nth-child(2)::before {
+					content: 'Prengi FMC';
+					height: 50px;
+					padding: 0px 40px;
+					font-size: 14px;
+					line-height: 50px;
+					border-right: 1px solid #8b9192;
+				}
+				&:nth-child(3)::before {
+					content: 'Prengi Maliz Retail';
+					height: 50px;
+					padding: 0px 40px;
+					font-size: 14px;
+					line-height: 50px;
+					border-right: 1px solid #8b9192;
+				}
+				&:nth-child(4)::before {
+					content: 'Prengi Logistic';
+					height: 50px;
+					padding: 0px 40px;
+					font-size: 14px;
+					line-height: 50px;
+					border-right: 1px solid #8b9192;
+				}
+				&:nth-child(5)::before {
+					content: 'Prengi IT';
+					height: 50px;
+					padding: 0px 40px;
+					font-size: 14px;
+					line-height: 50px;
+				}
+				&:nth-child(6)::before {
+					content: 'Prengi HR';
+					height: 50px;
+					padding: 0px 25px;
+					font-size: 14px;
+					line-height: 50px;
+				}
+			}
 		}
 	}
 }
