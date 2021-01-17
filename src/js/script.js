@@ -9,13 +9,5 @@ $(document).ready(function(){
 		speed: 500,
 		fade: true,
 		cssEase: 'linear',
-		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-					dots: false
-				}
-			}
-		]
 	});
  });

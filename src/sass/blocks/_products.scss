@@ -1,6 +1,6 @@
 .products {
 	padding: 78px 0px 61px;
-	background: url('../img/products/bg_products.jpg')center (center/cover) no-repeat;
+	background: url('../img/products/bg_products.jpg')left (center/cover) no-repeat;
 	.carousel {
 		display: flex;
 		align-items: center;
@@ -21,6 +21,7 @@
 			font-size: 0;
 			outline: none;
 			cursor: pointer;
+			z-index: 1000;
 		}
 		.slick-next {
 			position: absolute;
@@ -33,6 +34,7 @@
 			font-size: 0;
 			outline: none;
 			cursor: pointer;
+			z-index: 1000;
 		}
 		.slick-dots {
 			position: absolute;
@@ -68,6 +70,7 @@
 				&:nth-child(1)::before {
 					content: 'Prengi Production';
 					height: 50px;
+					width: 100%;
 					padding: 0px 25px;
 					font-size: 14px;
 					line-height: 50px;
@@ -76,6 +79,7 @@
 				&:nth-child(2)::before {
 					content: 'Prengi FMC';
 					height: 50px;
+					width: 100%;
 					padding: 0px 40px;
 					font-size: 14px;
 					line-height: 50px;
@@ -84,6 +88,7 @@
 				&:nth-child(3)::before {
 					content: 'Prengi Maliz Retail';
 					height: 50px;
+					width: 100%;
 					padding: 0px 40px;
 					font-size: 14px;
 					line-height: 50px;
@@ -92,6 +97,7 @@
 				&:nth-child(4)::before {
 					content: 'Prengi Logistic';
 					height: 50px;
+					width: 100%;
 					padding: 0px 40px;
 					font-size: 14px;
 					line-height: 50px;
@@ -100,6 +106,7 @@
 				&:nth-child(5)::before {
 					content: 'Prengi IT';
 					height: 50px;
+					width: 100%;
 					padding: 0px 40px;
 					font-size: 14px;
 					line-height: 50px;
@@ -107,6 +114,7 @@
 				&:nth-child(6)::before {
 					content: 'Prengi HR';
 					height: 50px;
+					width: 100%;
 					padding: 0px 25px;
 					font-size: 14px;
 					line-height: 50px;
@@ -122,4 +130,151 @@
 	font-weight: 900;
 	text-align: center;
 	color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+	.products {
+		.carousel {
+			width: 95%;
+			img {
+				width: 80%;
+			}
+			.slick-prev {
+				left: 5%;
+			}
+			.slick-next {
+				right: 5%;
+			}
+		}
+	}
+	.title {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 991px) {
+	.products {
+		padding: 78px 40px 61px;
+		.carousel {
+			.slick-dots {
+				width: 100%;
+				li {
+					&:nth-child(1)::before {
+						line-height: 25px;
+					}
+					&:nth-child(2)::before {
+						line-height: 25px;
+					}
+					&:nth-child(3)::before {
+						padding: 0 25px;
+						line-height: 25px;
+					}
+					&:nth-child(4)::before {
+						line-height: 25px;
+					}
+					&:nth-child(5)::before {
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.products {
+		.carousel {
+			.slick-prev {
+				left: 0;
+			}
+			.slick-next {
+				right: 0;
+			}
+			.slick-dots {
+				li {
+					&:nth-child(1)::before {
+						padding: 0px 15px;
+						font-size: 13px;
+					}
+					&:nth-child(2)::before {
+						padding: 0 20px;
+						font-size: 13px;
+					}
+					&:nth-child(3)::before {
+						padding: 0 20px;
+						font-size: 13px;
+						line-height: 17px;
+					}
+					&:nth-child(4)::before {
+						padding: 0 20px;
+						font-size: 13px;
+					}
+					&:nth-child(5)::before {
+						padding: 0 20px;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+	.title {
+		width: 100%;
+	}
+}
+
+@media (max-width: 575px) {
+	.products {
+		padding: 78px 25px 61px;
+		.carousel {
+			width: 100%;
+			img {
+				width: 85%;
+				transform: translateX(9%);
+			}
+			.slick-prev {
+				top: 55%;
+			}
+			.slick-next {
+				top: 55%;
+			}
+			.slick-dots {
+				height: 50px;
+				padding: 0;
+				li {
+					&:nth-child(1)::before {
+						height: 40px;
+						padding: 0px 7px;
+						font-size: 10px;
+						line-height: 20px;
+					}
+					&:nth-child(2)::before {
+						height: 40px;
+						padding: 0 7px;
+						font-size: 10px;
+						line-height: 20px;
+					}
+					&:nth-child(3)::before {
+						height: 40px;
+						padding: 0 7px;
+						font-size: 10px;
+						line-height: 13px;
+					}
+					&:nth-child(4)::before {
+						height: 40px;
+						padding: 0 7px;
+						font-size: 10px;
+						line-height: 20px;
+					}
+					&:nth-child(5)::before {
+						height: 40px;
+						padding: 0 7px;
+						font-size: 10px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+	.title {
+		font-size: 20px;
+	}
 }

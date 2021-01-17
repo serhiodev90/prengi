@@ -305,6 +305,11 @@
 				left: 110%;
 				transform: translateY(-50%);
 			}
+			.slick-dots{
+				button {
+					display: none;
+				}
+			}
 		}
 	}
 }
