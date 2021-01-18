@@ -135,9 +135,11 @@
 @media (max-width: 1199px) {
 	.products {
 		.carousel {
-			width: 95%;
+			width: 100%;
 			img {
+				display: block;
 				width: 80%;
+				margin: 0 auto;
 			}
 			.slick-prev {
 				left: 5%;
@@ -183,6 +185,12 @@
 @media (max-width: 767px) {
 	.products {
 		.carousel {
+			width: 100%;
+			img {
+				display: block;
+				width: 85%;
+				margin: 0 auto;
+			}
 			.slick-prev {
 				left: 0;
 			}
@@ -202,7 +210,6 @@
 					&:nth-child(3)::before {
 						padding: 0 20px;
 						font-size: 13px;
-						line-height: 17px;
 					}
 					&:nth-child(4)::before {
 						padding: 0 20px;
@@ -228,7 +235,6 @@
 			width: 100%;
 			img {
 				width: 85%;
-				transform: translateX(9%);
 			}
 			.slick-prev {
 				top: 55%;
