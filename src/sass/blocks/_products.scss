@@ -52,7 +52,11 @@
 			list-style: none;
 			li {
 				display: flex;
+				justify-content: center;
 				align-items: center;
+				height: 48px;
+				padding:0 25px 0;
+				border-right: 1px solid #8b9192;
 				font-size: 0px;
 				text-align: center;
 				color: #ffffff;
@@ -69,55 +73,45 @@
 				}
 				&:nth-child(1)::before {
 					content: 'Prengi Production';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 25px;
 					font-size: 14px;
-					line-height: 50px;
-					border-right: 1px solid #8b9192;
+					line-height: 1.5;
 				}
 				&:nth-child(2)::before {
 					content: 'Prengi FMC';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 40px;
 					font-size: 14px;
-					line-height: 50px;
-					border-right: 1px solid #8b9192;
+					line-height: 1.5;
 				}
 				&:nth-child(3)::before {
 					content: 'Prengi Maliz Retail';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 40px;
 					font-size: 14px;
-					line-height: 50px;
-					border-right: 1px solid #8b9192;
+					line-height: 1.5;
 				}
 				&:nth-child(4)::before {
 					content: 'Prengi Logistic';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 40px;
 					font-size: 14px;
-					line-height: 50px;
-					border-right: 1px solid #8b9192;
+					line-height: 1.5;
 				}
 				&:nth-child(5)::before {
 					content: 'Prengi IT';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 40px;
 					font-size: 14px;
-					line-height: 50px;
+					line-height: 1.5;
 				}
 				&:nth-child(6)::before {
 					content: 'Prengi HR';
-					height: 50px;
+					height: auto;
 					width: 100%;
-					padding: 0px 25px;
 					font-size: 14px;
-					line-height: 50px;
+					line-height: 1.5;
 				}
 			}
 		}
@@ -161,22 +155,8 @@
 			.slick-dots {
 				width: 100%;
 				li {
-					&:nth-child(1)::before {
-						line-height: 25px;
-					}
-					&:nth-child(2)::before {
-						line-height: 25px;
-					}
-					&:nth-child(3)::before {
-						padding: 0 25px;
-						line-height: 25px;
-					}
-					&:nth-child(4)::before {
-						line-height: 25px;
-					}
-					&:nth-child(5)::before {
-						line-height: 25px;
-					}
+					display: flex;
+					align-items: center;
 				}
 			}
 		}
@@ -199,24 +179,23 @@
 			}
 			.slick-dots {
 				li {
+					padding: 0 12px 0;
 					&:nth-child(1)::before {
-						padding: 0px 15px;
 						font-size: 13px;
 					}
 					&:nth-child(2)::before {
-						padding: 0 20px;
 						font-size: 13px;
 					}
 					&:nth-child(3)::before {
-						padding: 0 20px;
 						font-size: 13px;
 					}
 					&:nth-child(4)::before {
-						padding: 0 20px;
 						font-size: 13px;
 					}
 					&:nth-child(5)::before {
-						padding: 0 20px;
+						font-size: 13px;
+					}
+					&:nth-child(6)::before {
 						font-size: 13px;
 					}
 				}
@@ -243,38 +222,26 @@
 				top: 55%;
 			}
 			.slick-dots {
-				height: 50px;
 				padding: 0;
 				li {
+					padding: 0px 2% 0;
 					&:nth-child(1)::before {
-						height: 40px;
-						padding: 0px 7px;
 						font-size: 10px;
-						line-height: 20px;
 					}
 					&:nth-child(2)::before {
-						height: 40px;
-						padding: 0 7px;
 						font-size: 10px;
-						line-height: 20px;
 					}
 					&:nth-child(3)::before {
-						height: 40px;
-						padding: 0 7px;
 						font-size: 10px;
-						line-height: 13px;
 					}
 					&:nth-child(4)::before {
-						height: 40px;
-						padding: 0 7px;
 						font-size: 10px;
-						line-height: 20px;
 					}
 					&:nth-child(5)::before {
-						height: 40px;
-						padding: 0 7px;
 						font-size: 10px;
-						line-height: 20px;
+					}
+					&:nth-child(6)::before {
+						font-size: 10px;
 					}
 				}
 			}
