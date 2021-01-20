@@ -252,10 +252,9 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-top: 50vh;
+			height: 100%;
 			font-size: 20px;
 			line-height: 20px;
-			transform: translateY(-50%);
 			li {
 				margin: 0 0 45px 0;
 				&:last-child {
