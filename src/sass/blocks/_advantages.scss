@@ -30,7 +30,7 @@
 			background: url('../img/advantages/business.png')center (center/cover) no-repeat;
 		}
 		&:nth-child(6) {
-			background: url('../../img/advantages/payment.png')center (center/cover) no-repeat;
+			background: url('../img/advantages/payment.png')center (center/cover) no-repeat;
 		}
 	}
 
@@ -54,7 +54,7 @@
 			text-decoration: none;
 			transition: all .5s ease-in-out;
 			&:hover {
-				transform: scale(1.2);
+				transform: scale(1.1);
 			}
 		}
 	}
