@@ -1,0 +1,110 @@
+.advantages {
+	padding: 80px 0;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-top: 45px;
+	}
+
+	&__item {
+		display: flex;		
+		width: 570px;
+		min-height: 355px;
+		padding: 100px 0;
+		&:nth-child(1) {
+			background: url('../img/advantages/testing_online.jpg')center (center/cover) no-repeat;
+		}
+		&:nth-child(2) {
+			background: url('../img/advantages/intelect_system.png')center (center/cover) no-repeat;
+		}
+		&:nth-child(3) {
+			background: url('../img/advantages/world.png')center (center/cover) no-repeat;
+		}
+		&:nth-child(4) {
+			background: url('../img/advantages/no_programmer.png')center (center/cover) no-repeat;
+		}
+		&:nth-child(5) {
+			background: url('../img/advantages/business.png')center (center/cover) no-repeat;
+		}
+		&:nth-child(6) {
+			background: url('../../img/advantages/payment.png')center (center/cover) no-repeat;
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		background: rgba(0, 0, 0, 0.44);
+		cursor: pointer;
+		overflow: hidden;
+		a {
+			display: block;
+			width: 334px;
+			font-size: 23px;
+			font-weight: 400;
+			line-height: 1.13;
+			text-align: center;
+			color: #ffffff;
+			text-decoration: none;
+			transition: all .5s ease-in-out;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+.title-black {
+	width: 376px;
+	color: #393939;
+}
+
+@media (max-width: 1199px) {
+	.advantages {
+		padding: 80px 40px;
+		&__item {
+			width: 455px;
+		}
+		&__link {
+			a {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.advantages {
+		&__item {
+			width: 570px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.advantages {
+		&__item {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.advantages {
+		padding: 40px;
+		&__link {
+			padding: 0px 20px;
+			a {
+				font-size: 15px;
+			}
+		}
+	}
+	.title-black {
+		width: 100%;
+	}
+}
