@@ -11,6 +11,7 @@
 		background: url('../icons/contact/bg_conect.png') center (center/cover) no-repeat;
 		img {
 			width: 100%;
+			animation: push_it 1s ease 0s infinite alternate;
 		}
 	}
 }
