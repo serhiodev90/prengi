@@ -20,6 +20,11 @@
 		transform: scale(1.1);
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 	}
+	&:visited {
+		background: $main-color;
+		transform: scale(1);
+		box-shadow: none;
+	}
 }
 
 @media (max-width: 1199px) {
