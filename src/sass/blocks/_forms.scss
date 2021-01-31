@@ -1,0 +1,35 @@
+.feed-form {
+	margin: 30px auto 0;
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	input {
+		height: 50px;
+		border-radius: 5px;
+		background-color: #ffffff;
+		margin-top: 15px;
+		border: 1px solid rgba(0, 130, 161, 0.3);
+		padding: 0 20px;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: left;
+		color: #4b4b4b;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:focus {
+			box-shadow: 2px 2px 5px rgba(0, 130, 161, 0.3);
+			outline: none;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.feed-form {
+		margin: 30px auto 0;
+	}
+}
+@media (max-width: 575px) {
+	.feed-form {
+		width: 100%;
+	}
+}

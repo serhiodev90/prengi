@@ -31,6 +31,8 @@ body {
 @import 'blocks/data';
 @import 'blocks/contact';
 @import 'blocks/footer';
+@import 'blocks/forms';
+@import 'blocks/modal';
 
 @media (max-width: 1199px) {
 	.container {

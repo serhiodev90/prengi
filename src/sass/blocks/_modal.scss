@@ -1,0 +1,82 @@
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	background: rgba(0, 0, 0, 0.56);
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 380px;
+	min-height: 400px;
+	border-radius: 5px;
+	background: #ffffff;
+	padding: 38px 40px 40px 40px;
+	button {
+		margin: 20px auto 0;
+		width: 100%;
+	}
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 40px;
+		line-height: 20px;
+		color: $main-color;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		&:hover {
+			transform: scale(1.1);
+			text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);;
+		}
+	}
+	&__subtitle {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 700;
+		text-align: center;
+		color: #393939;
+	}
+	&__descr {
+		margin-top: 5px;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 300;
+		text-align: center;
+	}
+	&-mini {
+		min-height: 140px;
+	}
+}
+
+#consultation, #connect, #thanks {
+	display: none;
+}
+
+@media (max-width: 575px) {
+	.overlay {
+		width: 100%;
+	}
+	.modal {
+		width: 90%;
+		top: 50%;
+		left: 50%;
+		padding: 30px;
+		transform: translate(-50%, -50%);
+		&__close{
+			top: 10px;
+			right: 10px;
+		}
+		&__subtitle {
+			font-size: 16px;
+		}
+		label.error {
+			font-size: 12px;
+		}
+	}
+}

@@ -94,7 +94,7 @@
 					<h2 class="offer__subtitle">
 						<span class="offer__subtitle-up">PRENGI</span> - Платформа для прозрачного управления бизнесом
 					</h2>
-					<button class="button">Получить доступ</button>
+					<button data-modal="consultation" class="button">Получить доступ</button>
 				</div>
 
 				<div class="carousel">
@@ -250,7 +250,7 @@
 				<img src="icons/contact/conect.png" alt="contact">
 			</div>
 			<h2 class="title title-black">Приступить очень просто! <br> Нужно получить доступ и начать работу!</h2>
-			<button class="button">связаться с нами</button>
+			<button data-modal="consultation" class="button">связаться с нами</button>
 		</div>
 	</section>
 	<footer class="footer">
@@ -309,6 +309,40 @@
 			<div class="footer__protection">&copy; Prengi Ink. 2008-2021 Все права защищены.</div>
 		</div>
 	</footer>
+
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним Вам в течении 10 минут</div>
+			<form action="#" class="feed-form">
+				<input name="name" required placeholder="Имя" type="text">
+				<input name="phone" required placeholder="Телефон" type="tel">
+				<input name="email" required placeholder="E-mail" type="email">
+
+				<button class="button">отправить заявку</button>
+			</form>
+		</div>
+
+		<div class="modal" id="connect">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним Вам в течении 10 минут</div>
+			<form action="#" class="feed-form">
+				<input name="name" required placeholder="Имя" type="text">
+				<input name="phone" required placeholder="Телефон" type="tel">
+				<input name="email" required placeholder="E-mail" type="email">
+
+				<button class="button">отправить заявку</button>
+			</form>
+		</div>
+
+		<div class="modal modal-mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку</div>
+			<div class="modal__descr">Наш менеджер свяжется с Вами в ближайшее время!</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
