@@ -58,25 +58,24 @@
 	display: none;
 }
 
-@media (max-width: 575px) {
-	.overlay {
-		width: 100%;
+@media (max-width: 991px) {
+	.modal {
+		width: 70%;
+		height: 50%;
+		padding: 20px 40px;
 	}
+}
+
+@media (max-width: 575px) {
 	.modal {
 		width: 90%;
-		top: 50%;
-		left: 50%;
 		padding: 30px;
-		transform: translate(-50%, -50%);
 		&__close{
 			top: 10px;
 			right: 10px;
 		}
 		&__subtitle {
 			font-size: 16px;
-		}
-		label.error {
-			font-size: 12px;
 		}
 	}
 }

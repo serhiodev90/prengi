@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('.overlay, #consultation').fadeIn('slow');
 	});
 	$('.modal__close').on('click', function() {
-		$('.overlay, #consultation, #thanks #contact').fadeOut('slow');
+		$('.overlay, #consultation, #thanks, #contact').fadeOut('slow');
 	});
 
 	new WOW().init();
