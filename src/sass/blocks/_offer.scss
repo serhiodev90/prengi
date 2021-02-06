@@ -1,5 +1,4 @@
 .offer {
-	min-height: 700px;
 	margin-top: 85px;
 	padding-top: 39px;
 	background: url('../img/offer/bg_offer.jpg')center (center/cover) no-repeat;
@@ -275,6 +274,7 @@
 		&__access {
 			align-items: center;
 			width: 80%;
+			padding-top: 10px;
 		}
 		&__title {
 			width: 100%;
@@ -282,13 +282,13 @@
 		}
 		&__subtitle {
 			width: 100%;
+			margin-top: 14px;
 			text-align: center;
 		}
 		.carousel {
-			margin-top: 40px;
 			width: 60%;
 			img {
-				width: 100%;
+				width: 70%;
 			}
 			.slick-slide {
 				width: 100%;
@@ -315,6 +315,11 @@
 
 @media (max-width: 767px) {
 	.offer {
+		&__logo {
+			img {
+				width: 70%;
+			}
+		}
 		&__burger.active {
 			right: 7%;
 		}
@@ -350,7 +355,7 @@
 		.carousel {
 			width: 85%;
 			img {
-				width: 90%;
+				width: 70%;
 			}
 			.slick-prev {
 				left: -5%;

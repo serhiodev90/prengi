@@ -113,6 +113,19 @@
 @media (max-width: 575px) {
 	.ability {
 		padding: 40px;
+		&__item {
+			width: 80%;
+			margin-top: 30px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		&__noprengi {
+			align-items: center;
+		}
+		&__withprengi {
+			align-items: center;
+		}
 		&__img {
 			width: 50%;
 		}
