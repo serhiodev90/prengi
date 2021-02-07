@@ -23,3 +23,24 @@
 		}
 	}
 }
+
+@media (max-width: 991px) {
+	.feed-form {
+		align-items: center;
+		margin-top: 15px;
+		input {
+			margin-top: 10px;
+			height: 40px;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.feed-form {
+		width: 90%;
+		input {
+
+		}
+	}
+}

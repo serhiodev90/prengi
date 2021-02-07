@@ -5,6 +5,7 @@
 	top: 0;
 	display: none;
 	background: rgba(0, 0, 0, 0.56);
+	z-index: 1001;
 }
 .modal {
 	position: absolute;
@@ -16,6 +17,7 @@
 	border-radius: 5px;
 	background: #ffffff;
 	padding: 38px 40px 40px 40px;
+	z-index: 1001;
 	button {
 		margin: 20px auto 0;
 		width: 100%;
@@ -35,7 +37,7 @@
 		}
 	}
 	&__subtitle {
-		margin-top: 10px;
+		margin: 10px auto 0;
 		font-size: 16px;
 		line-height: 16px;
 		font-weight: 700;
@@ -43,7 +45,7 @@
 		color: #393939;
 	}
 	&__descr {
-		margin-top: 5px;
+		margin: 5px auto 0;
 		font-size: 14px;
 		line-height: 14px;
 		font-weight: 300;
@@ -56,4 +58,32 @@
 
 #consultation, #connect, #thanks {
 	display: none;
+}
+
+@media (max-width: 991px) {
+	.modal {
+		min-height: 280px;
+		padding: 30px 20px 20px;
+		button {
+			margin: 15px auto 0;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.modal {
+		width: 90%;
+		&__close {
+			top: 10px;
+			right: 10px;
+		}
+		&__subtitle {
+			width: 90%
+		}
+		&__descr {
+			width: 90%;
+		}
+	}
 }
